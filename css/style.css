@@ -3,12 +3,21 @@
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #fff;
   line-height: 1.6;
+  background: url(../img/html_bg.png), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,42,1) 35%, rgba(70,0,156,1) 100%);
+  background-size: cover;
+  background-position: center 0;
+  background-attachment: fixed;
 }
 
 *{
   box-sizing: border-box;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }
 
 input, textarea, button{
@@ -22,10 +31,10 @@ input, textarea, button{
 }
 
 .block-title{
-  color: #999;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin: 0 10px;
+  font-weight: 600;
 }
 
 .add-new{
@@ -50,7 +59,7 @@ input, textarea, button{
 header{
   width: 100%;
   height: 70px;
-  background-color: #fff;
+  background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(23,23,42,1) 35%, rgba(70,0,156,1) 100%);
   position: fixed;
   left: 0;
   top: 0;
@@ -77,8 +86,7 @@ header i:first-of-type{
 
 /* ------------------- Main ------------------- */
 main{
-  padding: 10px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .event-ad{
@@ -92,7 +100,7 @@ main{
   background-size: cover;
   text-decoration: none;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
 }
 
 .event-ad i{
@@ -115,115 +123,56 @@ main{
   font-size: 13px;
 }
 
-/* ------------------- Top Albums ------------------- */
-.top-albums{
+/* ------------------- List 1 style ------------------- */
+.list1{
+  display: flex;
+  padding: 20px;
+  max-width: 100%;
+  overflow: auto;
   margin-bottom: 20px;
 }
 
-.top-albums ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.list1::-webkit-scrollbar{
+  display: none;
 }
 
-.top-albums li{
-  flex-basis: calc(50% - 5px);
-  margin-bottom: 10px;
+.list1 li{
+  margin-right: 20px;
 }
 
-.top-albums a{
-  text-decoration: none;
-  color: #333;
-  display: flex;
-  border: 1px solid #e5e5e5;
-  padding: 5px;
-  align-items: center;
-  font-size: 13px;
-}
-
-.top-albums img{
-  width: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.top-albums a:hover{
-  background-color: var(--pri-color);
-  color: white;
-  border-color: var(--pri-color);
-}
-
-/* ------------------- List Items ------------------- */
-.item{
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-
-.item a{
+.list1 a{
   display: block;
-  text-decoration: none;
-  color: #333;
-}
-
-.item-cover{
   position: relative;
 }
 
-.item-cover i{
+.list1 i{
+  font-size: 42px;
   position: absolute;
-  font-size: 62px;
-  color: var(--pri-color);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 3px rgba(0,0,0,.5);
+  transform: translate(-50%, calc(-50% - 15px));
+  color: var(--pri-color);
+  text-shadow: 0 0 3px black;
 }
 
-.item-cover img{
+.list1 img{
   display: block;
-  width: 100%;
-}
-
-.item h2{
-  margin: 10px;
-  padding-bottom: 10px;
-  font-size: 24px;
-  font-weight: 600;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.item-user{
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.item-user img{
-  width: 30px;
+  width: 150px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
-.item-user h3{
-  font-weight: 600;
+.list1 h3{
+  text-align: center;
 }
 
-.item-user span{
-  margin-left: auto;
-  color: #ccc;
-  font-size: 13px;
+.square-image img{
+  border-radius: 0;
 }
 
-.item-des{
-  padding: 10px;
-}
 
-.item-des p{
-  color: #999;
-}
+
+
 
 /* ============================== Content Page =================================== */
 .content{
