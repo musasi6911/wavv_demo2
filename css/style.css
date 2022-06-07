@@ -84,9 +84,65 @@ header i:first-of-type{
   margin-right: 30px;
 }
 
+/* ------------------- Player ------------------- */
+.player{
+  background-color: #fff;
+  background-image: linear-gradient(#fff 0%, #fff 80%, #e5e5e5 100%);
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  position: fixed;
+  bottom: -80px;
+  left: 10px;
+  z-index: 100;
+  width: calc(100vw - 20px);
+  box-shadow: 0 0 5px 3px rgba(0,0,0,.5);
+  transition: .5s;
+}
+
+.player-cover{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.player-wave{
+  margin-left: auto;
+  display: flex;
+}
+
+.player-wave img{
+  height: 30px;
+}
+
+.player-wave img:first-child{
+  margin-right: -5px;
+}
+
+.player-info{}
+
+.player-info h3{
+  font-weight: 600;
+}
+
+.player-info p{
+  font-size: 13px;
+  color: #999;
+}
+
+.player i{
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+
+
+
 /* ------------------- Main ------------------- */
 main{
   margin-top: 80px;
+  padding-bottom: 80px;
 }
 
 .event-ad{
@@ -150,7 +206,7 @@ main{
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, calc(-50% - 15px));
+  transform: translate(-50%, -50%);
   color: var(--pri-color);
   text-shadow: 0 0 3px black;
 }
@@ -163,6 +219,61 @@ main{
 }
 
 .list1 h3{
+  text-align: center;
+}
+
+/* ------------------- List 2 style ------------------- */
+.list2{
+  display: flex;
+  padding: 20px;
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.list2::-webkit-scrollbar{
+  display: none;
+}
+
+.list2 li{
+  margin-right: 20px;
+}
+
+.list2 a{
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 3px solid white;
+}
+
+.list2 h3{
+  color: #333;
+  font-weight: 600;
+}
+
+.list2 p{
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+
+.list2 i{
+  font-size: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pri-color);
+  text-shadow: 0 0 3px black;
+}
+
+.list2 img{
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.list2 h3{
   text-align: center;
 }
 

@@ -1,6 +1,15 @@
 
 $(function(){
 
+  // Player Show
+  $('.list2 a').has('img').click(function(){
+    $('.player').css('bottom', 10);
+  })
+
+  $('.list2 a').has('h3').click(function(){
+    window.location.href = 'content.html';
+  })
+
   $('#file-upload').change(function() {
     var i = $(this).prev('label').clone();
     var file = $('#file-upload')[0].files[0].name;
