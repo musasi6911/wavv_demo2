@@ -6,6 +6,10 @@ $(function(){
     $('.player').css('bottom', 10);
   })
 
+  $('.fa-circle-stop').click(function(){
+    $('.player').css('bottom', -80)
+  })
+
   $('.list2 a').has('h3').click(function(){
     window.location.href = 'content.html';
   })
