@@ -241,6 +241,7 @@ input, textarea, button{
   color: white;
   border-radius: 50px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 /* ------------------- Sign up Information ------------------- */
