@@ -28,7 +28,7 @@ input, textarea, button{
 
 .block-title{
   border-bottom: 1px solid #ccc;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0 10px;
   font-weight: 600;
 }
@@ -215,13 +215,24 @@ nav span{
 
 .home-body a{
   width: 100%;
-  line-height: 150px;
+  height: 150px;
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  line-height: 1;
   animation: hbtn .5s 1.5s forwards;
   opacity: 0;
+}
+
+.home-body span{
+  display: block;
+  font-size: 24px;
+  padding-left: 20px;
+  font-weight: 600;
 }
 
 .home-btn_creator{
@@ -237,6 +248,10 @@ nav span{
   text-align: right;
   padding-right: 20px;
   filter: grayscale(1);
+}
+
+.home-btn_listen span{
+  padding-right: 20px;
 }
 
 .home-body a:hover{
