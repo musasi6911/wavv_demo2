@@ -1,9 +1,14 @@
 
 $(function(){
 
+  // Back to prev page
+  $('.bi-chevron-left').click(function(){
+    window.history.go(-1);
+  })
+
   // Player Show
   $('.list2 a').click(function(){
-    $('.player').css('bottom', 10);
+    $('.player').css('bottom', 70);
   })
 
   $('.fa-circle-stop').click(function(e){
@@ -35,24 +40,36 @@ $(function(){
     }
   })
 
-  // $('#file-upload').change(function() {
-  //   var i = $(this).prev('label').clone();
-  //   var file = $('#file-upload')[0].files[0].name;
-  //   $(this).next('p').text(file);
-  //   $(this).next('p').css('color', '#333');
-  // });
+  // Upload Page
+  $('#file-upload').change(function() {
+    var i = $(this).prev('label').clone();
+    var file = $('#file-upload')[0].files[0].name;
+    $(this).next('p').text(file);
+    $(this).next('p').css('color', '#333');
+  });
 
-  // var imgInp = document.getElementById('img-upload-input');
-  // var blah = document.getElementById('show-img');
+  var imgInp = document.getElementById('img-upload-input');
+  var blah = document.getElementById('show-img');
 
-  // imgInp.onchange = evt => {
-  //   const [file] = imgInp.files
-  //   if (file) {
-  //     $('.img-upload p').css('display', 'none');
-  //     blah.style.display = 'block';
-  //     blah.src = URL.createObjectURL(file);
-  //   }
-  // }
+  imgInp.onchange = evt => {
+    const [file] = imgInp.files
+    if (file) {
+      $('.img-upload p').css('display', 'none');
+      blah.style.display = 'block';
+      blah.src = URL.createObjectURL(file);
+    }
+  }
+
+  $('.up-stage_ans button').click(function(){
+    $(this).removeAttr('style');
+    $(this).parent().siblings().children().removeAttr('style');
+    $(this).css('background-color', '#c30d22');
+  })
+
+  $('.up-stage_social i').click(function(){
+    $(this).toggleClass('up-social_add')
+  })
+
 
 })
 
