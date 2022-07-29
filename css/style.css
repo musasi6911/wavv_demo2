@@ -790,6 +790,10 @@ main{
   z-index: 9999;
 }
 
+.upload-top i{
+  font-size: 24px;
+}
+
 .upload-top h1{
   font-size: 24px;
 }
