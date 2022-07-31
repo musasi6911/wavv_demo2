@@ -70,6 +70,34 @@ $(function(){
     $(this).toggleClass('up-social_add')
   })
 
+  $('.js-step7, .js-step8, .js-step9, .js-step10, .js-step11, .js-step12, .js-upload-btn').hide();
+
+  $('.js-yes1').click(function(){
+    $('.js-step7, .js-step8').fadeIn();
+  })
+
+  $('.js-yes2').click(function(){
+    $('.js-step9, .js-step10').fadeIn();
+  })
+
+  $('.js-yes3').click(function(){
+    $('.js-step11, .js-step12, .js-upload-btn').fadeIn();
+  })
+
+  $('.js-no1').click(function(){
+    $('.js-step12, .js-upload-btn').fadeIn();
+  })
+
+  $('.js-no2').click(function(){
+    $('.js-step10').fadeIn();
+  })
+
+  $('.js-no3').click(function(){
+    $('.js-step12, .js-upload-btn').fadeIn();
+  })
+
+  
+
 
 })
 
