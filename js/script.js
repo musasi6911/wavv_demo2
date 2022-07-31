@@ -6,6 +6,10 @@ $(function(){
     window.history.go(-1);
   })
 
+  $('.back-main').click(function(){
+    location.href = 'main.html';
+  })
+
   // Player Show
   $('.list2 a').click(function(){
     $('.player').css('bottom', 70);
