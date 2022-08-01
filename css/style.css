@@ -193,25 +193,13 @@ nav span{
 
 .home-logo{
   width: 30vw;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   margin-top: 30px;
   animation: hlogo .5s .5s forwards;
   opacity: 0;
 }
 
 @keyframes hlogo {
-  0%{ transform: translateY(0px); opacity: 0;}
-  100%{ transform: translateY(-30px); opacity: 1;}
-}
-
-.home-subtitle{
-  color: var(--pri-color);
-  margin-bottom: 30px;
-  animation: hstt .5s 1s forwards;
-  opacity: 0;
-}
-
-@keyframes hstt {
   0%{ transform: translateY(0px); opacity: 0;}
   100%{ transform: translateY(-30px); opacity: 1;}
 }
@@ -227,7 +215,7 @@ nav span{
   background-repeat: no-repeat;
   margin-bottom: 10px;
   line-height: 1;
-  animation: hbtn .5s 1.5s forwards;
+  animation: hbtn .5s 1s forwards;
   opacity: 0;
 }
 
@@ -412,22 +400,6 @@ nav span{
   width: 30% !important;
 }
 
-.sign-info input[type='radio']{
-  margin-bottom: 30px;
-}
-
-.sign-info input[type='radio']:nth-of-type(4){
-  margin-left: 30px;
-}
-
-.sign-info textarea{
-  width: 100%;
-  height: 100px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  resize: none;
-}
 
 
 /* ------------------- Main ------------------- */

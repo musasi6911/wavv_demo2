@@ -7,7 +7,7 @@ $(function(){
   })
 
   $('.back-main').click(function(){
-    location.href = 'main.html';
+    location.href = 'index.html';
   })
 
   // Player Show
